@@ -17,7 +17,6 @@ COPY $PACKFILE $PACKDIR/
 
 WORKDIR /root
 COPY run.sh ./
-RUN chmod +x run.sh
 
 # Port
 EXPOSE 6066
