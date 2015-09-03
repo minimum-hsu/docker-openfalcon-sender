@@ -7,6 +7,11 @@ ENV WORKDIR=/home/sender PACKDIR=/package PACKFILE=falcon-sender.tar.gz CONFIGDI
 # Volume
 VOLUME $CONFIGDIR $WORKDIR $PACKDIR
 
+# For QQ Message
+RUN \
+  apt-get update && \
+  apt-get install -y curl jq
+
 # Install Open-Falcon Sender Component
 COPY $CONFIGFILE $CONFIGDIR/
 COPY $PACKFILE $PACKDIR/
