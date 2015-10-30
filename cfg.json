@@ -11,17 +11,20 @@
     "queue": {
         "sms": "/sms",
         "mail": "/mail",
-        "qq": "/qq"
+        "qq": "/qq",
+        "serverchan": "/serverchan"
     },
     "worker": {
         "sms": 10,
         "mail": 50,
-        "qq": 50
+        "qq": 50,
+        "serverchan": 10
     },
     "api": {
         "sms": "http://127.0.0.1:8000/sms",
         "mail": "http://127.0.0.1:9000/mail",
-        "qq": "http://127.0.0.1:5010"
+        "qq": "http://127.0.0.1:5010",
+        "serverchan": "http://sc.ftqq.com"
     }
 }
 
